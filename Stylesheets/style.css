@@ -1,0 +1,138 @@
+body{
+    background-color:  #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+
+
+    
+}
+.top-section{
+    margin: auto;
+}
+.contact-topheading{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 84px;
+    letter-spacing: -0.03em;
+    color: #1E1B1B;
+    width: 40%;
+    margin-left: 36px;
+    margin-bottom: 25px;
+    
+}
+
+.form-style{
+    width: 60%;
+}
+.input-bar{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2px;
+    border: none;
+    margin: 3px 0px;
+
+    color: black;
+    width: 93%;
+    padding: 18px 12px 18px 24px;
+}
+::placeholder {
+    color: black;
+    opacity: 10;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: black
+  }
+  .contact-button{
+    
+    background-color: #FF6433;
+    color: white;
+    border-radius: 12px;
+    font-size: 10px;
+    Padding: 16px 40px 16px 40px
+
+
+  }
+  .contact-submit{
+    margin-top: 25px;
+
+  }
+  
+  .contact-notes{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 28px;
+    color: #1E1B1B;
+    opacity: 0.7;
+  }
+.contact-me{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    color: #1E1B1B;
+
+}
+.contact-section{
+    box-sizing: border-box;
+    line-height: 20px;
+    margin: 15px 0px;
+
+}
+.contact-me a{
+    text-decoration: none;
+    color: black;
+}
+.contact-me a:hover{
+    opacity: 20%;
+}
+@media(max-width: 1190px){
+    .contact-topheading{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 800px){
+    .contact-topheading{
+        margin-left: 0px;
+        font-size: 50px;
+        line-height: 56px;
+    }
+}
+@media(max-width: 1200px){
+    .contact-section{
+        line-height: 13px
+    }
+}
+@media(max-width: 1000px){
+    .contact-section{
+        line-height: 8px;
+        margin: 3px 0px;
+
+    }
+    .contact-notes{
+        line-height: 21px;
+}}
+.contact-map{
+    text-align: center;
+    margin-top: 70px;
+    
+}
+.contact-map img{
+    width: 100%;
+
+}
+.contact-footer{
+    height: 260px;
+    width: 80%;
+
+
+    color: black;
+}
+.bottom-image{
+    background-image: url("../images/contact-bg.jpg");
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: -80px;
+    z-index: -1;
+}
