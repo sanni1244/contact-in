@@ -2,13 +2,9 @@ body{
     background-color:  #FFFFFF;
     font-family: 'Manrope', sans-serif;
     font-style: normal;
-
-
-    
+    box-sizing: border-box;
 }
-.top-section{
-    margin: auto;
-}
+
 .contact-topheading{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
@@ -18,91 +14,171 @@ body{
     letter-spacing: -0.03em;
     color: #1E1B1B;
     width: 40%;
-    margin-left: 36px;
     margin-bottom: 25px;
     
 }
 
-.form-style{
-    width: 60%;
-}
-.input-bar{
-    background-color: hsl(0, 0%, 95%);
-    border-radius: 2px;
-    border: none;
-    margin: 3px 0px;
 
-    color: black;
-    width: 93%;
-    padding: 18px 12px 18px 24px;
-}
 ::placeholder {
     color: black;
     opacity: 10;
     font-size: 0.8em;
     font-weight: 600;
-    color: black
   }
-  .contact-button{
-    
+.contact-button{
     background-color: #FF6433;
     color: white;
     border-radius: 12px;
     font-size: 10px;
     Padding: 16px 40px 16px 40px
-
-
-  }
-  .contact-submit{
+}
+.contact-submit{
     margin-top: 25px;
-
-  }
-  
-  .contact-notes{
+}
+.contact-notes{
     font-weight: 600;
     font-size: 13px;
     line-height: 28px;
     color: #1E1B1B;
     opacity: 0.7;
-  }
+}
 .contact-me{
     font-weight: 600;
     font-size: 21px;
     line-height: 32px;
     letter-spacing: -0.03em;
     color: #1E1B1B;
-
 }
 .contact-section{
     box-sizing: border-box;
     line-height: 20px;
     margin: 15px 0px;
-
 }
 .contact-me a{
     text-decoration: none;
     color: black;
 }
+.input-bar{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2px;
+    border: none;
+    margin: 3px 0px;
+    color: black;
+    width: 80%;
+    padding: 18px 12px 18px 24px;
+}
+
 .contact-me a:hover{
     opacity: 20%;
 }
-@media(max-width: 1190px){
-    .contact-topheading{
-        margin-left: 0px;
-    }
+.contact-map{
+    text-align: center;
+    margin-top: 70px;   
 }
-@media(max-width: 800px){
-    .contact-topheading{
-        margin-left: 0px;
-        font-size: 50px;
-        line-height: 56px;
-    }
+.contact-map img{
+    width: 100%;
 }
+.contact-footer{
+    height: 260px;
+    width: 80%;
+    color: black;
+}
+.themap{
+    position: relative;
+    top: 90px;
+}
+
+.bottom-image{
+    background-image: url("../images/contact-bg.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+   
+}
+
 @media(max-width: 1200px){
     .contact-section{
-        line-height: 13px
+        line-height: 7px;
+        margin: 0px;        
     }
+    .contact-topheading{
+        margin-left: 0px;
+        font-size: 45px;
+        line-height: 56px;
+        width: 90%;
+    }
+   
+
 }
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;700&display=swap");
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+/* custom black as opposed to bootstrap #000 bg-black */
+.bg-black {
+  background-color: #1e1b1b !important;
+}
+.bg-orange {
+  background-color: #ff6433;
+}
+
+/* car-truck image in the first/bigger footer */
+.foot-image-1 {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/Getintouch-1.jpg);
+  background-position: 45% 0;
+}
+
+/* car-engine image in the first/bigger footer */
+.foot-image-2 {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/getintouch-2.jpg);
+  z-index: 10;
+}
+/* orange text box in the first/bigger footer */
+.orange-box {
+  padding-bottom: 100px !important;
+  padding-top: 80px !important;
+  width: 95%;
+  left: 27%;
+  position: relative;
+  z-index: 11;
+}
+
+.orange-box h2 {
+  font-size: 40px !important;
+}
+@media (max-width: 1200px) {
+  .orange-box h2 {
+    font-size: 30px !important;
+  }
+  .orange-box {
+    width: 80% !important;
+  }
+}
+@media (width: 2560px) {
+  .foot-container {
+    height: 50vh;
+  }
+  .orange-box {
+    height: 50vh;
+    padding-top: 170px !important;
+  }
+  .orange-box h2 {
+    font-size: 58px !important;
+  }
+}
+
 @media(max-width: 1000px){
     .contact-section{
         line-height: 8px;
@@ -112,27 +188,108 @@ body{
     .contact-notes{
         line-height: 21px;
 }}
-.contact-map{
-    text-align: center;
-    margin-top: 70px;
+
+
+
+@media(max-width: 1400px){
+    .block{
+        display: block;
+    }
+}
+@media (max-width: 480px){
+    .contact-topheading{
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .contact-me{
+        font-size: 19px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #1E1B1B;
+    
+    }
+    .bottom-image{
+        height: 200px;
+        
+    }
+    ::placeholder {
+        font-size: 10px;
+      }
+   
+  
+
+}
+.contact-right{
+    width: 50%;
+}
+@media(max-width: 400px){
+    .contact-me {
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .themap{
+        top: 40px;
+    }
+    .contact-button{
+        padding: 10px;    }
+        
+        .overall{
+            display: block;
+        }
+        .ser{
+            flex: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .contact-notes{
+            font-size: 19px;
+            width: 160%;
+
+            display: block;
+        }
+        .contact-right{
+            width: 100%;
+        }
+        .contact-section{
+            margin-top: 20px;
+        }
+}
+
+@media(max-width: 300px){
+    .contact-me {
+    font-size: 14px;
     
 }
-.contact-map img{
-    width: 100%;
 
 }
-.contact-footer{
-    height: 260px;
-    width: 80%;
-
-
-    color: black;
+@media(max-width: 240px){
+    .contact-me {
+    font-size: 12px;
+}}
+@media(max-width: 220px){
+    .contact-me {
+    font-size: 10px;
 }
-.bottom-image{
-    background-image: url("../images/contact-bg.jpg");
+.contact-right{
     width: 100%;
-    height: 300px;
-    position: relative;
-    top: -80px;
-    z-index: -1;
+}
+
+}
+.form-style{
+    width: 70%;
+}
+@media(max-width: 800px){
+    .contact-topheading{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .block{
+        display: block;
+    }
+    .form-style{
+        width: 130%;
+    }
+    
 }
